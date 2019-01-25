@@ -9,9 +9,9 @@ January, 2019
 
 ### Contact
 
-Email: [waponton](waponton@gmail.com)
+Email: <a href="mailto:waponton@gmail.com">waponton@gmail.com</a>
 
-Github: [gorbulus](https://github.com/gorbulus)
+Github: <a href="https://github.com/gorbulus">gorbulus</a>
 
 ## Description
 Welcome to Py_Pass_Gen, a simple program that makes passwords and saves them to a file.
