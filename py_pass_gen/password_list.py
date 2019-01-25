@@ -1,28 +1,10 @@
+# password_list.py
+# William Ponton
+# 1.24.19
+# Password generating algorithm for the py_pass_gen project
 
-#********************Python Password Generator!!!****************************
-#===============================================================================
-#Author: William Ponton
-#Date: 12.29.18
-#
-#Description: This module creates four lists:
-#              UPPER CASE
-#              LOWER CASE
-#              INTEGER (0 - 9)
-#              SYMBOLS (#, $, %, &)
-#  1. The lists are populated by a range of ASCII Integers of their category.
-#  2. A second list of random items from each parent list is created.
-#     a. This technique provides an even probability of a pick from lists of differing lengths.
-#  3. A third Master List is returned of random characters from each of the previous lists (passwordList).
-
-# Import random module
+# Import modules
 import random
-
-# Lists of acceptable password characters.
-#   Each list is populated with the ASCII Integer values that correspond to their category:
-#   UPPER CASE (A - Z)
-#   LOWER CASE (a - z)
-#   INTEGERS   (0 - 9)
-#   SYMBOLS    (#, $, %, &)
 
 def passList(passwordList):
   # Upper Case A - Z (ASCII codes 67 - 90)
@@ -31,21 +13,25 @@ def passList(passwordList):
   charListLower = list(range(97, 123))
   # Integers 0 - 9 (ASCII codes 48 - 57)
   intList = list(range(48, 58))
-  # Special Characters: #, $, %, &, :, ? (ASCII codes: 35, 36, 37, 38, 58, 63 )
+  # Special Characters: #, $, %, & (ASCII codes: 35, 36, 37, 38)
   symList = list(range(35, 39))
   # Equal Probablility of a pick from each list
+  # Upper Case
   upperPick = random.choice(charListUpper)
+  # Lower Case
   lowerPick = random.choice(charListLower)
+  # Integer
   intPick = random.choice(intList)
+  # Symbol
   symPick = random.choice(symList)
-  '''Create a master list of randomized ASCII Characters'''
-  passwordList = [upperPick, lowerPick, intPick, symPick]
+  # Create a master list of randomized ASCII Characters
+  passwordList += [upperPick, lowerPick, intPick, symPick]
   return passwordList
 
 # Use the password list to create a password
 def create_password(passmax, password, passwordList):
-   for n in range(passmax):
-    pl.passList(passwordList)
+  for n in range(passmax):
+    passList(passwordList)
     password += chr(random.choice(passwordList))
-    return password
-  
+    # print(password)
+  return password
