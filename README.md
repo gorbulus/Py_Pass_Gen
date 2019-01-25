@@ -75,4 +75,4 @@ A third ```passwordList``` is returned of random characters from each of the pre
 
 Having trouble with Py_Pass_Gen? 
 
-Get help at: [gorbulus](waponton@gmail.com) and we’ll help you sort it out.
+Get help at: <a href="mailto:waponton@gmail.com">waponton@gmail.com</a> and we’ll help you sort it out.
