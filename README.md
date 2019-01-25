@@ -9,7 +9,7 @@ January, 2019
 
 ### Contact
 
-Email: [waponton](waponton@gmail.com)
+Email: [waponton] (https://mail.google.com/mail/u/2/#inbox?compose=DmwnWtMpcsMJDwHtLKkcvjrKQXQhzsFFbDTFphXvDdvqgdZshCXvdsQzmQXQCWPGtHDqtfDmfdsQ)
 
 Github: [gorbulus](https://github.com/gorbulus)
 
