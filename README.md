@@ -25,13 +25,12 @@ I enjoy writing password programs when learning new languages.
 2. Continue creating passwords until the user chooses to exit.
 3. Provide a unique combination of upper chars, lower case chars, and special chars.
 4. User entered password name and length.
-5. Save c
+5. Save completed passwords to the file.
 
 ## Dependencies
 If you want to run tests.py ```pip install -r dev-requirements.txt```
 
 ## Password Module: 
-
 This section uses the ```random``` module to generate four different lists.
 
 ### Valid characters
@@ -69,8 +68,6 @@ To even the probability of a pick from each list, a second list of random items 
 ### Password creation
 
 A third ```passwordList``` is returned of random characters from each of the previous lists.
-
-# Use the password list to create a password
 
 ```password += chr(random.choice(passwordList))```
 
