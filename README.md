@@ -18,6 +18,7 @@ Welcome to Py_Pass_Gen, a simple program that makes passwords and saves them to 
 
 I enjoy writing password programs when learning new languages.
 
+Here is the <a href="mailto:waponton@gmail.com">repo</a> for the project.
 
 ## Goals
 
